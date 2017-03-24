@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>carlos_python.xcscheme</key>
+		<key>python_estudio.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07CC0D4F1E7EBA3A002C1015</key>
+		<key>0790439A1E83B20200E041A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

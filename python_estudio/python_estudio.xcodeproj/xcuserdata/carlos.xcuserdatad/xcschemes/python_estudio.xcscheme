@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07CC0D4F1E7EBA3A002C1015"
-               BuildableName = "carlos_python"
-               BlueprintName = "carlos_python"
-               ReferencedContainer = "container:carlos_python.xcodeproj">
+               BlueprintIdentifier = "0790439A1E83B20200E041A6"
+               BuildableName = "python_estudio"
+               BlueprintName = "python_estudio"
+               ReferencedContainer = "container:python_estudio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,23 +34,34 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/apple/Documents/carlos_python/python_estudio"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <PathRunnable
+         runnableDebuggingMode = "0"
+         FilePath = "/usr/bin/python">
+      </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07CC0D4F1E7EBA3A002C1015"
-            BuildableName = "carlos_python"
-            BlueprintName = "carlos_python"
-            ReferencedContainer = "container:carlos_python.xcodeproj">
+            BlueprintIdentifier = "0790439A1E83B20200E041A6"
+            BuildableName = "python_estudio"
+            BlueprintName = "python_estudio"
+            ReferencedContainer = "container:python_estudio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "0323.py"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -63,10 +74,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07CC0D4F1E7EBA3A002C1015"
-            BuildableName = "carlos_python"
-            BlueprintName = "carlos_python"
-            ReferencedContainer = "container:carlos_python.xcodeproj">
+            BlueprintIdentifier = "0790439A1E83B20200E041A6"
+            BuildableName = "python_estudio"
+            BlueprintName = "python_estudio"
+            ReferencedContainer = "container:python_estudio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -6,62 +6,67 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		0731BC691E83B418003C6E46 /* 0323.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = 0323.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
-		07CC0D4A1E7EBA3A002C1015 = {
+		079043951E83B20200E041A6 = {
 			isa = PBXGroup;
 			children = (
+				0731BC691E83B418003C6E46 /* 0323.py */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		07CC0D4F1E7EBA3A002C1015 /* carlos_python */ = {
+		0790439A1E83B20200E041A6 /* python_estudio */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 07CC0D521E7EBA3A002C1015 /* Build configuration list for PBXLegacyTarget "carlos_python" */;
+			buildConfigurationList = 0790439D1E83B20200E041A6 /* Build configuration list for PBXLegacyTarget "python_estudio" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/python;
 			dependencies = (
 			);
-			name = carlos_python;
+			name = python_estudio;
 			passBuildSettingsInEnvironment = 1;
-			productName = carlos_python;
+			productName = python_estudio;
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
-		07CC0D4B1E7EBA3A002C1015 /* Project object */ = {
+		079043961E83B20200E041A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = carlos;
 				TargetAttributes = {
-					07CC0D4F1E7EBA3A002C1015 = {
+					0790439A1E83B20200E041A6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 07CC0D4E1E7EBA3A002C1015 /* Build configuration list for PBXProject "carlos_python" */;
+			buildConfigurationList = 079043991E83B20200E041A6 /* Build configuration list for PBXProject "python_estudio" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 07CC0D4A1E7EBA3A002C1015;
+			mainGroup = 079043951E83B20200E041A6;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07CC0D4F1E7EBA3A002C1015 /* carlos_python */,
+				0790439A1E83B20200E041A6 /* python_estudio */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		07CC0D501E7EBA3A002C1015 /* Debug */ = {
+		0790439B1E83B20200E041A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -105,7 +110,7 @@
 			};
 			name = Debug;
 		};
-		07CC0D511E7EBA3A002C1015 /* Release */ = {
+		0790439C1E83B20200E041A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -142,7 +147,7 @@
 			};
 			name = Release;
 		};
-		07CC0D531E7EBA3A002C1015 /* Debug */ = {
+		0790439E1E83B20200E041A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUGGING_SYMBOLS = YES;
@@ -155,7 +160,7 @@
 			};
 			name = Debug;
 		};
-		07CC0D541E7EBA3A002C1015 /* Release */ = {
+		0790439F1E83B20200E041A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -168,24 +173,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07CC0D4E1E7EBA3A002C1015 /* Build configuration list for PBXProject "carlos_python" */ = {
+		079043991E83B20200E041A6 /* Build configuration list for PBXProject "python_estudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07CC0D501E7EBA3A002C1015 /* Debug */,
-				07CC0D511E7EBA3A002C1015 /* Release */,
+				0790439B1E83B20200E041A6 /* Debug */,
+				0790439C1E83B20200E041A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07CC0D521E7EBA3A002C1015 /* Build configuration list for PBXLegacyTarget "carlos_python" */ = {
+		0790439D1E83B20200E041A6 /* Build configuration list for PBXLegacyTarget "python_estudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07CC0D531E7EBA3A002C1015 /* Debug */,
-				07CC0D541E7EBA3A002C1015 /* Release */,
+				0790439E1E83B20200E041A6 /* Debug */,
+				0790439F1E83B20200E041A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 07CC0D4B1E7EBA3A002C1015 /* Project object */;
+	rootObject = 079043961E83B20200E041A6 /* Project object */;
 }

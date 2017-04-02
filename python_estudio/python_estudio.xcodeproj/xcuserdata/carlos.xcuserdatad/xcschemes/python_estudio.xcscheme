@@ -38,7 +38,7 @@
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/apple/Documents/carlos_python/python_estudio"
+      customWorkingDirectory = "/Users/carlos/Documents/Carlos_python/python_estudio"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -58,7 +58,7 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "0323.py"
+            argument = "0401.py"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

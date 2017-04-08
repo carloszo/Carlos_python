@@ -31,3 +31,22 @@ class Student2(object):
 
 anni = Student2('anni',70)
 print anni.get_name()
+
+#类的继承
+class Animal(object):
+    def run(self):
+        print "animal is running"
+
+class Dog(Animal):
+    pass
+# 子类可以继承父类的所有方法，也可以增加新方法，
+    def eat(self):
+        print "eating meat"
+# 子类还可以对父类的方法进行修改，例如修改父类的run方法
+    def run(self):
+        print "Dog is running"
+dog = Dog()
+dog.run()
+dog.eat()
+
+#__slots__的使用

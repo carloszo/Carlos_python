@@ -58,6 +58,10 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
+            argument = "0404.py"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "0401.py"
             isEnabled = "YES">
          </CommandLineArgument>

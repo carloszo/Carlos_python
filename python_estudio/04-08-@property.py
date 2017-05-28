@@ -1,7 +1,6 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
 '''在绑定属性时，如果我们直接把属性暴露出去，虽然写起来很简单，但是，没办法检查参数，导致可以把成绩随便改：
-    
 '''
 class Student(object):
     pass

@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		073ECA2E1E9A1744001AC933 /* 04-09-多重继承.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "04-09-多重继承.py"; sourceTree = "<group>"; };
+		0748EFE51EB216900049C56C /* spider_test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = spider_test.py; sourceTree = "<group>"; };
 		074EB5A41E912585008EAFF6 /* 0401.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = 0401.py; sourceTree = "<group>"; };
-		07BCB58C1E93484D001B86BD /* python_estudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python_estudio; sourceTree = "<group>"; };
+		07589E361E988ED900A44E7F /* 04-08-@property.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "04-08-@property.py"; sourceTree = "<group>"; };
+		07BCB58C1E93484D001B86BD /* python_estudio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python_estudio; sourceTree = "<group>"; };
 		07BCB58D1E934875001B86BD /* 0404.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = 0404.py; sourceTree = "<group>"; };
+		07CAC5E21EC3204D006132C9 /* peliculas_spider.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = peliculas_spider.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		079043951E83B20200E041A6 = {
 			isa = PBXGroup;
 			children = (
+				0748EFE51EB216900049C56C /* spider_test.py */,
+				07CAC5E21EC3204D006132C9 /* peliculas_spider.py */,
+				073ECA2E1E9A1744001AC933 /* 04-09-多重继承.py */,
+				07589E361E988ED900A44E7F /* 04-08-@property.py */,
 				07BCB58C1E93484D001B86BD /* python_estudio */,
 				074EB5A41E912585008EAFF6 /* 0401.py */,
 				07BCB58D1E934875001B86BD /* 0404.py */,

@@ -58,12 +58,12 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "0404.py"
+            argument = "peliculas_spider.py"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "0401.py"
-            isEnabled = "YES">
+            argument = "spider_test.py"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>

@@ -48,6 +48,4 @@ peliculas = Peliculas_Spider('http://www.ygdy8.net')
 list = peliculas.getPeliculaList(160)
 downloadlink = peliculas.getPeliculaUrl(list)
 peliculas.SaveList(downloadlink)
-#test
-1111
-2222
+

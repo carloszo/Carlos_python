@@ -19,4 +19,4 @@ class CarlosSpiderSpider(scrapy.Spider):
             item['link'] = table.xpath('a/@href').extract()
             item['desc'] = table.xpath('text()')
             yield item
-        print item
+

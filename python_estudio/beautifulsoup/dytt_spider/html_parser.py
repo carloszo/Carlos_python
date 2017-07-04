@@ -25,8 +25,8 @@ class HtmlParser(object):
         res_data['title'] = title_node.get_text()
 
         #<div id="Zoom">
-        summary_node =soup.find('div',id='Zoom')
-        res_data['summary'] = summary_node.get_text()
+        #summary_node =soup.find('div',id='Zoom')
+        #res_data['summary'] = summary_node.get_text()
 
         #<td style="WORD-WRAP: break-word" bgcolor="#fdfddf"><a href="ftp://d:d@dygodj8.com:12311/[电影天堂www.dy2018.com]冈仁波齐DVD中字.mkv">
         link_node = soup.find('td',bgcolor='#fdfddf').find('a')

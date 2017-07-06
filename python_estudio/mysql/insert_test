@@ -1,0 +1,13 @@
+#!/usr/bin/python
+# -*- coding:utf8 -*-
+import MySQLdb
+db = MySQLdb.connect('127.0.0.1','root','a12345','spider')
+cursor = db.cursor()
+sql = "insert into dytt(title,link) values('%s','%s')"%('test2','dytt8.net')
+try:
+    cursor.execute(sql)
+    db.commit()
+except:
+    print "unable to insert data"
+    db.rollback()
+db.close()

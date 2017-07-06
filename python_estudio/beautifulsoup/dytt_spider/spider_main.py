@@ -6,6 +6,9 @@ import traceback
 from url_manager import UrlManager
 from html_parser import HtmlParser
 from html_outputer import HtmlOutputer'''
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class SpiderMain(object):
     def __init__(self):
@@ -25,8 +28,8 @@ class SpiderMain(object):
                 new_urls,new_data = self.parser.parse(new_url,html_cont)
                 self.urls.add_new_urls(new_urls)
                 self.outputer.collect_data(new_data)
-                #if count == 1000:
-                #    break
+                if count == 10:
+                    break
                 count = count +1
 
             except:

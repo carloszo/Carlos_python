@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #-*-coding:utf-8 -*-
+import MySQLdb
 
 class HtmlOutputer(object):
     def __init__(self):
@@ -11,18 +12,23 @@ class HtmlOutputer(object):
         self.datas.append(data)
 
     def output_html(self):
-        fout = open('output.html','w')
-        fout.write('<html>')
-        fout.write('<body>')
-        fout.write('<table>')
+        db = MySQLdb.connect('127.0.0.1','root','a12345','spider')
+        cursor = db.cursor()
+
         for data in self.datas:
-            fout.write('<tr>')
-            fout.write('<td>%s</td>'%data['title'].encode('utf-8'))
-            fout.write('<td>%s</td>'%data['download_link'].encode('utf-8'))
-            fout.write('</tr>')
-            
-        fout.write('</table>')
-        fout.write('</body>')
-        fout.write('</html>')
-        fout.close()
+            content_title = data['title'].decode('gbk').encode('utf-8')
+            content_link = data['download_link'].decode('gbk').encode('utf-8')
+            sql = "insert into dytt(title,link) values('%s','%s')"%(content_title,content_link)
+            print sql
+            #sql = "insert into dytt(title,link) values('123','345')"
+            try:
+                cursor.execute(sql)
+                db.commit()
+            except:
+                db.rollback()
+        db.close()
+
+
+
+
 

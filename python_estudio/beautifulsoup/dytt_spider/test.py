@@ -6,8 +6,9 @@ from html_downloader import HtmlDownloader
 from html_parser import HtmlParser
 from url_manager import UrlManager
 from html_outputer import HtmlOutputer
-url = 'http://www.dytt8.net/html/gndy/dyzz/20170630/54374.html'
-
+import urlparse
+new_url = '/html/gndy/dyzz/20170630/54374.html'
+page_url = 'http://www.dytt8.net/html/gndy/jddy/20170703/54401.html'
 '''response = urllib2.urlopen(url)
 content = response.read()
 print content
@@ -16,7 +17,7 @@ content2 = '<h1><font color=#07519a>2017年动画《蓝精灵：寻找神秘村�
 soup = BeautifulSoup(content2,'html.parser',from_encoding='utf-8')
 title = soup.find('h1').find('font').get_text()
 print title
-'''
+
 
 
 d = HtmlDownloader()
@@ -38,4 +39,7 @@ for url in new_urls:
 
 print "=========================="
 print new_data
+'''
+fullurl  = urlparse.urljoin(page_url, new_url)
+print fullurl
 

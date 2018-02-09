@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf-8')
 url = "http://www.dytt8.net/html/gndy/dyzz/20170627/54346.html"
 response = urllib2.urlopen(url)
 page = response.read()
-soup = BeautifulSoup(page,'html.parser',from_encoding='utf-8')
+soup = BeautifulSoup(page,'html.parser',from_encoding='gb13080')
 #find_all(name,attrs,string)
 list = soup.find_all('a',href=re.compile(r'\/html\/(.*)\/(.*)\/\d{8}\/\d{5}\.html'))
 with open('test_soup.txt','a') as f:

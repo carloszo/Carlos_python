@@ -11,8 +11,9 @@ from pdfminer.converter import PDFPageAggregator
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 import os
-root = Tk()
-filename=askopenfilename(filetypes=(('pdf files','*.pdf'),('all files','*.*')))
+#root = Tk()
+#filename=askopenfilename(filetypes=(('pdf files','*.pdf'),('all files','*.*')))
+filename='我的简历.pdf'
 fp = open(filename, 'rb')
 #来创建一个pdf文档分析器
 parser = PDFParser(fp)
@@ -38,7 +39,7 @@ else:
         layout=device.get_result()
         for x in layout:
             if(isinstance(x,LTTextBoxHorizontal)):
-                with open('b.txt','a') as f:
+                with open('卢敏杰.txt','a') as f:
                     f.write(x.get_text().strip().encode('utf-8')+'\n')
 
-root.mainloop()
+#root.mainloop()

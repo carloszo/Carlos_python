@@ -12,4 +12,5 @@ def helloButton():
 button = Button(root,text="button",command=helloButton)
 input = Entry(root,text='please select the right pdf file')
 button.grid(row=1,column=1)
+input.grid(row=1,column=2)
 root.mainloop()

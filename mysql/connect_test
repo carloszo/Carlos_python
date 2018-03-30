@@ -1,0 +1,15 @@
+#!/usr/bin/python
+# -*- coding:utf8 -*-
+import MySQLdb
+#打开数据库
+db =  MySQLdb.connect('127.0.0.1','root','a12345','spider')
+#获得游标
+cursor = db.cursor()
+try:
+    cursor.execute('select * from dytt')
+    results = cursor.fetchall()
+    for row in results:
+        print row[0]+'--------------'+row[1]
+except:
+    print "Error: unable to fecth data"
+db.close()

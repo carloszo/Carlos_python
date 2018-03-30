@@ -1,0 +1,23 @@
+# Disk DescriptorFile
+version=1
+encoding="UTF-8"
+CID=fffffffe
+parentCID=ffffffff
+createType="fullDevice"
+
+# Extent description
+RW 7866368 FLAT "/dev/disk3" 0 partitionUUID @disk:diskModel=,diskSize=4027580416,diskVendor=SMI
+
+# The Disk Data Base 
+#DDB
+
+ddb.adapterType = "ide"
+ddb.geometry.biosCylinders = "7803"
+ddb.geometry.biosHeads = "16"
+ddb.geometry.biosSectors = "63"
+ddb.geometry.cylinders = "489"
+ddb.geometry.heads = "255"
+ddb.geometry.sectors = "63"
+ddb.longContentID = "20d5cdfdafa7a957b1f5db2afffffffe"
+ddb.uuid = "60 00 C2 92 cf a2 1e a7-7f 57 20 93 48 fb 31 5b"
+ddb.virtualHWVersion = "14"

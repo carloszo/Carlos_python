@@ -20,6 +20,14 @@
     <!--{{i}}{%if not forloop.last %},{%endif%}-->
 <!--{% endfor %}-->
 
-{% url 'add' 4 5 %}
+<a href="{% url 'add2' 4 5%}">link</a>
+{% if num > 0 and num < 60 %}
+不及格
+{% elif num > 60 and num < 70 %}
+及格
+{% else %}
+优秀
+{%endif%}
+
 </body>
 </html>

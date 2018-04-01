@@ -26,5 +26,7 @@ def home(request):
     # '大学':'南京航空航天大学'
     # }
     # return render(request,'home.html',{'dict':dict})
-    list=range(100)
-    return render(request,'home.html',{'list':list})
+    # list=range(100)
+    # return render(request,'home.html',{'list':list})
+    num=100
+    return render(request,'home.html',{'num':num})

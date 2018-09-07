@@ -28,16 +28,18 @@ def parser(api):
     return songtitle,songformat,songdownloadlink
 
 def music_download(filename,downloadlink):
-    path= '/Users/apple/documents/music/' + filename
-    if(os.path.exists('/Users/apple/documents/music')==False):
-        os.makedirs('/Users/apple/documents/music/')
+    dir = os.getcwd()+'/music/'
+    path= dir + filename
+    if(os.path.exists(dir)==False):
+        os.makedirs(dir)
     elif(os.path.isfile(path)==False):
-            urllib.urlretrieve(downloadlink, '/Users/apple/documents/music/' + filename)
+            urllib.urlretrieve(downloadlink, dir + filename)
     else:
         return
 
 url='http://music.baidu.com/top/dayhot'
 musicidlist = get_musicid(url)
+# num = 1
 for songid in musicidlist:
     try:
         api = "http://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.song.play&format=jsonp&callback=jQuery17208098337996053833_1513859108469&songid=%s&_=1513859109906"%songid
@@ -45,6 +47,9 @@ for songid in musicidlist:
         filename=songtitle+'.'+songformat
         music_download(filename,songdownloadlink)
         print(songtitle+' downloaded successfully!')
+        # num+=1
+        # if num>10:
+        #     break
     except:
         print('download fail')
 #parser(api)

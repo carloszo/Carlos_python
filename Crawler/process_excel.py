@@ -1,45 +1,62 @@
 #!/usr/bin/python
 #-*- coding:utf8 -*-
 import xlrd
+import xlwt
 import sys
+import os
 reload(sys)
 sys.setdefaultencoding( "utf8" )
+
 #打开Excel文件
-data = xlrd.open_workbook('excel.xls')
-table = data.sheets()[0]
-nrows = table.nrows
-tu=['奥林花园店','东澜岸店','丽华店','沔州大道店','民主路店','名都花园店','青城华府店','青宜居店','涂家岭店','孝感北京二路店','永旺经开店','友谊国际店']
-liao =['城花璟苑店','均大店','马沧湖店','玫瑰二店','玫瑰街店','庙山店','琴台大道店','五里新村店','永旺金桥店','知音东村店','佛祖岭店']
-li = ['百隆东方城店','宝丰二路店','常青花园店','楚天金园店','东立国际店','汉中路店','后湖东方店','荟聚店','金银潭店','泰福堂店','唐家墩店','新花莲店','中心店','紫润店'
-,'东立国际店','宝丰二路店']
-cai=['文华路店','汉城店','麦迪森店','七里店','太康店','太子水榭店','团结新村店']
-sell_list=[]
-for i in range(nrows):
-    #print(str(table.row_values(i)).decode('unicode escape').encode('utf8'))
-    s1 = table.row_values(i)[1]
-    dianming=s1.replace('好药师','')
-    xiaoshou = table.row_values(i)[11]
-    maoli = table.row_values(i)[14]
-    quyu=''
-    if dianming in tu:
-        quyu='廖燕妮'
-    elif dianming in tu:
-        quyu='涂梦云'
-    elif dianming in li:
-        quyu='李宁'
-    elif dianming in cai:
-        quyu='蔡静'
-    sell_list.append((dianming,xiaoshou,maoli,quyu))
+def read_excel(file):
+    data = xlrd.open_workbook(file)
+    #sheet对象
+    table = data.sheets()[0]
+    #nrows 表格总行数
+    nrows = table.nrows
+    #sheet二维列表，装载所有目标文件中的内容
+    sheet=[]
+    for i in range(nrows):
+        #读取表格中的每一行内容
+        temp_rows = table.row_values(i)
+        rows = []
+        for row in temp_rows:
+        # 处理表格中单元格内容为空的内容
+        #     if len(row)==0:
+        #         row=0
+            rows.append(row)
+        sheet.append(rows)
+    return sheet
+
+#写入Excel
+#content为二维列表
+def write_excel(content,newfilename):
+    f = xlwt.Workbook()
+    sheet1= f.add_sheet(u'sheet1',cell_overwrite_ok=True)
+    line_num = 0
+    for row in content:
+        for i in range(len(row)):
+            if line_num<len(content):
+                sheet1.write(line_num,i,row[i])
+        line_num+=1
+    f.save(newfilename)
+    print newfilename+" 写入成功！"
 
 
-print sell_list[2]
-    #s2=str(table.row_values(i)[11])
-    #s3=str(table.row_values(i)[14])
-    #print(type(s1),type(s2),type(s3))
-    #print(s1+' '+s2 +' '+s3)
-    #print a
+if __name__ == "__main__":
+    content = read_excel('linux.xls')
+    unprocessed_excels_dir = "/Users/apple/downloads/unprocessed_excels/"
+    unprocessed_excels = os.listdir(unprocessed_excels_dir)
+    for temp in unprocessed_excels:
+        filename_split = os.path.splitext(temp)
+        if ".xlsx" in filename_split or ".xls" in filename_split:
+            filename = unprocessed_excels_dir+temp
+            content = read_excel(filename)
+            processed_excels_dir = "/Users/apple/downloads/processed_excels/"
+            newfilename = processed_excels_dir+ filename_split[0]+'.xls'
+            if os.path.exists(processed_excels_dir) == False:
+                os.mkdir(processed_excels_dir)
+            else:
+                write_excel(content,newfilename)
 
-#print(table.row_values(0)[11])
-#print(table.row_values(0)[14])
-#print(str(table.row_values(1)).decode('unicode escape').encode('utf8'))
-#print(table.row_values(0)[1],table.row_values(0)[11],table.row_values(0)[14])
+
